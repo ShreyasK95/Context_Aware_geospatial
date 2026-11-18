@@ -19,14 +19,14 @@ app = Flask(__name__)
 app.secret_key = secrets.token_urlsafe(32)
 
 
-GOOGLE_API_KEY = 'AIzaSyBEymVM_zPtRmSf3udgZx-r_4EIa7-yDCs'
+GOOGLE_API_KEY = ''
 genai.configure(api_key=GOOGLE_API_KEY)
 model = genai.GenerativeModel('gemini-1.5-flash')
 
-ORS_API_KEY = '5b3ce3597851110001cf62488b1a1a63d9f84aa3a7326a2b94d66f28'
+ORS_API_KEY = ''
 ors_client = openrouteservice.Client(key=ORS_API_KEY)
 
-OWM_API_KEY = '4b5eb9fbbe2555fbbb42f8f8b97e9222'
+OWM_API_KEY = ''
 
 geolocator = Nominatim(user_agent="my-geocoding-app/1.0")
 
